@@ -11,6 +11,7 @@ import java.util.Objects;
  */
 @NoArgsConstructor
 @Getter
+@Setter
 @ToString(callSuper = true)
 @Entity
 @Table(name = "order_items")

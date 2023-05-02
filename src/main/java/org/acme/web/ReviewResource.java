@@ -12,7 +12,7 @@ import javax.ws.rs.core.MediaType;
 import java.util.List;
 
 /**
- * @author Nebrass Lamouchi
+ * @author Jawher Kallel
  */
 @Path("/reviews")
 @Tag(name = "review", description = "All the review methods")

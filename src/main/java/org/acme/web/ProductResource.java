@@ -11,7 +11,7 @@ import javax.ws.rs.core.MediaType;
 import java.util.List;
 
 /**
- * @author Nebrass Lamouchi
+ * @author Jawher Kallel
  */
 
 @Path("/products")

@@ -1,7 +1,7 @@
 package org.acme.domain.enums;
 
 /**
- * @author Nebrass Lamouchi
+ * @author Jawher Kallel
  */
 public enum CartStatus {
     NEW, CANCELED, CONFIRMED

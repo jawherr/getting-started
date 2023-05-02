@@ -12,10 +12,10 @@ import javax.ws.rs.core.MediaType;
 import java.util.List;
 
 /**
- * @author Nebrass Lamouchi
+ * @author Jawher Kallel
  */
 
-@Authenticated
+
 @Path("/orders")
 @Tag(name = "order", description = "All the order methods")
 public class OrderResource {

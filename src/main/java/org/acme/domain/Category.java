@@ -12,6 +12,7 @@ import lombok.*;
  */
 @NoArgsConstructor
 @Getter
+@Setter
 @ToString(callSuper = true)
 @Entity
 @Table(name = "categories")

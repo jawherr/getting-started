@@ -11,10 +11,10 @@ import javax.ws.rs.core.MediaType;
 import java.util.List;
 
 /**
- * @author Nebrass Lamouchi
+ * @author Jawher Kallel
  */
 
-@Authenticated
+
 @Path("/order-items")
 @Tag(name = "order-item", description = "All the order-item methods")
 public class OrderItemResource {

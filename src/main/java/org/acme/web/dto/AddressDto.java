@@ -6,7 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * @author Nebrass Lamouchi
+ * @author Jawher Kallel
  */
 @Data
 @NoArgsConstructor

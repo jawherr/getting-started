@@ -11,6 +11,7 @@ import java.util.Objects;
  * A Payment.
  */
 @Getter
+@Setter
 @NoArgsConstructor
 @ToString(callSuper = true)
 @Entity

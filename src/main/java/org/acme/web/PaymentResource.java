@@ -12,10 +12,10 @@ import javax.ws.rs.core.MediaType;
 import java.util.List;
 
 /**
- * @author Nebrass Lamouchi
+ * @author Jawher Kallel
  */
 
-@Authenticated
+
 @Path("/payments")
 @Tag(name = "payment", description = "All the payment methods")
 public class PaymentResource {

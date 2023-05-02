@@ -15,6 +15,7 @@ import java.util.Objects;
 @ToString(callSuper = true)
 @Entity
 @Getter
+@Setter
 @Table(name = "reviews")
 public class Review extends AbstractEntity {
 

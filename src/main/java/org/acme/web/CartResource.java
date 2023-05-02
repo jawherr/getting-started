@@ -10,9 +10,9 @@ import javax.ws.rs.*;
 import java.util.List;
 
 /**
- * @author Nebrass Lamouchi
+ * @author Jawher Kallel
  */
-@Authenticated
+
 @Path("/carts")
 @Tag(name = "cart", description = "All the cart methods")
 public class CartResource {
