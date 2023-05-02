@@ -175,7 +175,7 @@
       <properties>
         <skipITs>false</skipITs>
         <quarkus.package.type>native</quarkus.package.type>
-        <sonar.projectKey>getting-started</sonar.projectKey>
+        <sonar.projectKey>jawherr_getting-started</sonar.projectKey>
         <sonar.organization>jawherr</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
       </properties>
