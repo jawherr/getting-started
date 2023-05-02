@@ -1,21 +1,20 @@
 package org.acme.domain;
 
 import io.smallrye.common.constraint.NotNull;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 import lombok.*;
+
+import java.util.Objects;
 
 /**
  * A Review.
  */
-@Data
 @NoArgsConstructor
-@AllArgsConstructor
 @ToString(callSuper = true)
 @Entity
 @Getter
-@Setter
 @Table(name = "reviews")
 public class Review extends AbstractEntity {
 
@@ -30,4 +29,24 @@ public class Review extends AbstractEntity {
     @NotNull
     @Column(name = "rating", nullable = false)
     private Long rating;
+
+    public Review(@NotNull String title, @NotNull String description,
+                  @NotNull Long rating) {
+        this.title = title;
+        this.description = description;
+        this.rating = rating;
+    }
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Review review = (Review) o;
+        return Objects.equals(title, review.title) &&
+                Objects.equals(description, review.description) &&
+                Objects.equals(rating, review.rating);
+    }
+    @Override
+    public int hashCode() {
+        return Objects.hash(title, description, rating);
+    }
 }

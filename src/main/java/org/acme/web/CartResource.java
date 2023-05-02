@@ -5,8 +5,8 @@ import org.acme.service.CartService;
 import org.acme.web.dto.CartDto;
 import org.eclipse.microprofile.openapi.annotations.tags.Tag;
 
-import jakarta.inject.Inject;
-import jakarta.ws.rs.*;
+import javax.inject.Inject;
+import javax.ws.rs.*;
 import java.util.List;
 
 /**

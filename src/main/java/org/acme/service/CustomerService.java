@@ -2,9 +2,9 @@ package org.acme.service;
 
 import lombok.extern.slf4j.Slf4j;
 
-import jakarta.enterprise.context.ApplicationScoped;
-import jakarta.inject.Inject;
-import jakarta.transaction.Transactional;
+import javax.enterprise.context.ApplicationScoped;
+import javax.inject.Inject;
+import javax.transaction.Transactional;
 import org.acme.domain.Customer;
 import org.acme.repository.CustomerRepository;
 import org.acme.web.dto.CustomerDto;

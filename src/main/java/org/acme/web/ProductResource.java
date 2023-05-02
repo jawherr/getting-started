@@ -4,10 +4,10 @@ import org.acme.service.ProductService;
 import org.acme.web.dto.ProductDto;
 import org.eclipse.microprofile.openapi.annotations.tags.Tag;
 
-import jakarta.annotation.security.RolesAllowed;
-import jakarta.inject.Inject;
-import jakarta.ws.rs.*;
-import jakarta.ws.rs.core.MediaType;
+import javax.annotation.security.RolesAllowed;
+import javax.inject.Inject;
+import javax.ws.rs.*;
+import javax.ws.rs.core.MediaType;
 import java.util.List;
 
 /**
