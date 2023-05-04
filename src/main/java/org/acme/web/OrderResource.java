@@ -15,7 +15,7 @@ import java.util.List;
  * @author Jawher Kallel
  */
 
-
+@Authenticated
 @Path("/orders")
 @Tag(name = "order", description = "All the order methods")
 public class OrderResource {

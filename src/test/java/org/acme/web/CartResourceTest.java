@@ -95,10 +95,10 @@ public class CartResourceTest {
 
     @Test
     void testFindById() {
-        get("/carts/3").then()
+        get("/carts/9").then()
                 .statusCode(UNAUTHORIZED.getStatusCode());
 
-        get("/carts/100").then()
+        get("/carts/2").then()
                 .statusCode(UNAUTHORIZED.getStatusCode());
     }
 

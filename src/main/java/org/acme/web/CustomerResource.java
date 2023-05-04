@@ -15,6 +15,7 @@ import java.util.List;
  */
 
 @Path("/customers")
+@Authenticated
 @Tag(name = "customer", description = "All the customer methods")
 public class CustomerResource {
 

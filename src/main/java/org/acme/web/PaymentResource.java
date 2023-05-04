@@ -15,7 +15,7 @@ import java.util.List;
  * @author Jawher Kallel
  */
 
-
+@Authenticated
 @Path("/payments")
 @Tag(name = "payment", description = "All the payment methods")
 public class PaymentResource {

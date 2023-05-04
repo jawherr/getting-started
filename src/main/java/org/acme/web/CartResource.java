@@ -4,6 +4,7 @@ import io.quarkus.security.Authenticated;
 import org.acme.service.CartService;
 import org.acme.web.dto.CartDto;
 import org.eclipse.microprofile.openapi.annotations.tags.Tag;
+import org.eclipse.microprofile.openapi.annotations.tags.Tags;
 
 import javax.inject.Inject;
 import javax.ws.rs.*;
@@ -13,6 +14,7 @@ import java.util.List;
  * @author Jawher Kallel
  */
 
+@Authenticated
 @Path("/carts")
 @Tag(name = "cart", description = "All the cart methods")
 public class CartResource {
