@@ -1,0 +1,21 @@
+---
+version: '3.7'
+
+services:
+  ## Postgresql Docker Compose Config
+  postgresql:
+    container_name: demo-postgres
+    image: postgres
+    environment:
+      POSTGRES_DB: getting_started
+      POSTGRES_USER: developer
+      POSTGRES_PASSWORD: p4SSW0rd
+      PGDATA: /var/lib/postgresql/data/pgdata
+    volumes:
+      - ./postgres-order:/data/postgres
+    expose:
+      - "5434"
+    ports:
+      - "5434:5434"
+    command: -p 5434
+    restart: always
